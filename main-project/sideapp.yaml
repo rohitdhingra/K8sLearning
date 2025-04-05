@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sidecar-pod
+spec:
+  containers:
+    - name: main-app
+      image: main-image:latest
+      imagePullPolicy: Never
+    - name: sidecar-app
+      image: side-image:latest
+      imagePullPolicy: Never
