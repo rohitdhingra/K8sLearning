@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: main-car-pod
+spec:
+  containers:
+    - name: main-car-pod
+      image: main-car-image:latest
+      imagePullPolicy: Never
